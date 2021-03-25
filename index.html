@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>boop bee doo memory game</h1>
+    
+    <p>
+      Welcome to the game! Repeat back the pattern by pressing buttons.
+    </p>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" onclick="stopGame()" class="hidden">Stop</button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.com/e57cd769-c547-475b-9e83-a39f4f1dcbdf%2Fasian-empowerment.JPG?v=1616643798067" onmousedown="startTone(1)" onmouseup="stopTone()"/>
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.com/e57cd769-c547-475b-9e83-a39f4f1dcbdf%2Fsun-girl.png?v=1616643800841" onmousedown="startTone(2)" onmouseup="stopTone()"/>
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.com/e57cd769-c547-475b-9e83-a39f4f1dcbdf%2Fmoon-goddess.JPG?v=1616643803447" onmousedown="startTone(3)" onmouseup="stopTone()"/>
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.com/e57cd769-c547-475b-9e83-a39f4f1dcbdf%2Fwindblown%20goddess.png?v=1616643806580" onmousedown="startTone(4)" onmouseup="stopTone()"/>
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.com/e57cd769-c547-475b-9e83-a39f4f1dcbdf%2Fpeace.JPG?v=1616643812443" onmousedown="startTone(5)" onmouseup="stopTone()"/>
+      </button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.com/e57cd769-c547-475b-9e83-a39f4f1dcbdf%2Ffigure-art.jpg?v=1616643821471" onmousedown="startTone(6)" onmouseup="stopTone()"/>
+      </button>
+    </div>
+
+
+  </body>
+</html>
